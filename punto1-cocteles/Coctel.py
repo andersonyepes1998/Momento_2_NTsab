@@ -3,6 +3,7 @@ class Coctel:
         self.__nombre = None
         self.__precio = None
         self.__grados = None
+        self.__cantidad = None
 
     # ======= geters =======
     @property
@@ -16,6 +17,9 @@ class Coctel:
     @property
     def grados(self):
         return self.__grados
+    @property
+    def cantidad(self):
+        return self.__cantidad
 
     # ===== Setters ========
     @nombre.setter
@@ -29,3 +33,7 @@ class Coctel:
     @grados.setter
     def grados(self, grados):
         self.__grados = grados
+
+    @cantidad.setter
+    def cantidad(self, grados):
+        self.__cantidad = grados
